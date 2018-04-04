@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1522817208023.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "268C1959",
+    "lastKnownWriteTime" : 1522820347,
+    "last_content_update" : 1522820347062,
+    "path" : "~/Google Drive/R package/PropensityPlots/R/propensity_plots.R",
+    "project_path" : "R/propensity_plots.R",
+    "properties" : {
+        "cursorPosition" : "1,2",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
