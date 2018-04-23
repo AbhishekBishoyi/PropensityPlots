@@ -58,7 +58,7 @@ propensity.univariate<-function(data_table,target_var, cat_var,y_value)
   # plot1<-ggplot(data=data_count, aes_string(x=cat_var, y=yvar1, group=1)) +
   #   geom_line(color="red")+
   #   geom_point()+xlab(cat_var)+ylab(paste("Count of ",target_var,"=",y_value))
-  theme_set(theme_gray(base_size = 18))
+  ggplot2::theme_set(ggplot2::theme_gray(base_size = 18))
   plot1<-ggplot2::ggplot(data=data_prop, aes_string(x=cat_var, y=yvar2, group=1)) +
     ggplot2::geom_line(color="red")+
     ggplot2::geom_point()+ggplot2::xlab(cat_var)+ggplot2::ylab(paste("Proportion"))+
