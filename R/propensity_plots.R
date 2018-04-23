@@ -59,7 +59,7 @@ propensity.univariate<-function(data_table,target_var, cat_var,y_value)
   #   geom_line(color="red")+
   #   geom_point()+xlab(cat_var)+ylab(paste("Count of ",target_var,"=",y_value))
   ggplot2::theme_set(ggplot2::theme_gray(base_size = 18))
-  plot1<-ggplot2::ggplot(data=data_prop, aes_string(x=cat_var, y=yvar2, group=1)) +
+  plot1<-ggplot2::ggplot(data=data_prop, ggplot2::aes_string(x=cat_var, y=yvar2, group=1)) +
     ggplot2::geom_line(color="red")+
     ggplot2::geom_point()+ggplot2::xlab(cat_var)+ggplot2::ylab(paste("Proportion"))+
     # +ylab(paste("Prop of ",target_var,"=",y_value))
@@ -78,9 +78,9 @@ propensity.univariate<-function(data_table,target_var, cat_var,y_value)
   # text(bp, xtext$Freq, labels = xtext$Freq, pos = 1)
 
 
-  plot2<-ggplot2::ggplot(data=xtext, aes(x=xtext$x, y=xtext$Freq)) +
+  plot2<-ggplot2::ggplot(data=xtext, ggplot2::aes(x=xtext$x, y=xtext$Freq)) +
     ggplot2::geom_bar(stat="identity", color="black", fill="yellow")+
-    ggplot2::xlab(cat_var)+ggplot2::ylab("Count of cases")+ggplot2::geom_text(aes(label=xtext$Freq), vjust=-0.5,
+    ggplot2::xlab(cat_var)+ggplot2::ylab("Count of cases")+ggplot2::geom_text(ggplot2::aes(label=xtext$Freq), vjust=-0.5,
                                                    color="black", size=3.5)+
     ggplot2::theme(axis.text.x = element_text(angle = 90, hjust = 1))
   gridExtra::grid.arrange(plot1, plot2, nrow=2)
